@@ -1,0 +1,159 @@
+/* Adjustments to body */
+body {
+    margin: 20px 50px; /* Add space to the top and bottom */
+    min-height: 100vh; /* Ensures that the body takes up at least the full viewport height */
+    position: relative;
+    font-family: Arial;
+    padding: 0; /* Remove default padding */
+}
+
+/* Adjustments to navbar */
+.navbar {
+    background-color: black; /* Set background color */
+    border-radius: 30px; /* Add border radius for rounded corners */
+    overflow: hidden; /* Hide any overflowing content */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+    padding: 20px 40px; /* Add padding to the navbar */
+    height: 30px; /* Set height of the navbar */
+}
+
+.navbar .brand {
+    color: white; /* Set text color */
+    font-weight: bold; /* Set font weight */
+}
+
+.navbar ul {
+    list-style: none; /* Remove default list styles */
+    display: flex; /* Use flexbox for layout */
+}
+
+.navbar li {
+    margin-left: 10px; /* Add left margin between navbar items */
+}
+
+.navbar li:first-child {
+    margin-left: 0; /* Remove left margin from the first child */
+}
+
+.navbar li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set text color */
+    padding: 3px 10px; /* Add padding to links */
+}
+
+.navbar li a:hover {
+    color: skyblue; /* Change text color on hover */
+}
+
+.welcome-content {
+    display: flex;
+}
+
+.image-container{
+    width: 265px;
+    height: 185px;
+    margin-left: 150px;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: #ccc;
+}
+
+/* Adjustments to biography section */
+.biography {
+    margin: 20px; /* Add margin around the section */
+    padding: 20px; /* Add padding inside the section */
+    background-color: #f9f9f9; /* Set background color */
+    border-radius: 30px; /* Add border radius for rounded corners */
+}
+
+.biography h1, .biography h2, .biography p {
+    color: black; /* Set text color */
+    line-height: 1.6; /* Set line height for paragraphs */
+}
+
+/* Adjustments to footer */
+.footer {
+    position: absolute; /* Position the footer at the bottom of the page */
+    bottom: 0; /* Align footer to the bottom */
+    width: 100%; /* Set width to full width of the viewport */
+    background-color: #007bff; /* Set background color */
+    color: white; /* Set text color */
+    padding: 20px 0; /* Add padding */
+    text-align: center; /* Align text to the center */
+}
+
+.contact-info {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Allow items to wrap if they exceed the width */
+}
+
+.contact-info div {
+    margin: 10px; /* Add margin around contact info */
+}
+
+.contact-info a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set link color */
+}
+
+.contact-info a:hover {
+  color: darkmagenta; /* Change text color on hover */
+}
+
+/* Adjustments to ball */
+
+:root {
+  --violet: #8A2BE2; /* Define positional color for violet */
+  --turquoise: #40E0D0; /* Define positional color for turquoise */
+  --coral: #FF7F50; /* Define positional color for coral */
+}
+
+.first-ball, .second-ball, .third-ball {
+    width: 15%; /* Set width as 10% of the viewport width */
+    height: 25%; /* Set height as 10% of the viewport height */
+    border-radius: 50%; /* Make the ball circular */
+    position: absolute; /* Position the ball */
+    top: 57%; /* Align the ball vertically */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align content vertically */
+    justify-content: center; /* Align content horizontally */
+    color: white; /* Set text color */
+    z-index: 1; /* Ensure the ball is above the navbar */
+    font-size: 160%;
+}
+
+/* Adjustments to ball colors and animations */
+.first-ball{
+    background-color: var(--violet); /* Set background color using variable */
+    animation: moveBall 2 linear forwards; /* Add animation */
+}
+
+.second-ball {
+    background-color: var(--turquoise); /* Set background color using variable */
+    animation: moveBall2 2s linear forwards; /* Add animation */
+}
+
+.third-ball {
+    background-color: var(--coral); /* Set background color using variable */
+    animation: moveBall3 2s linear forwards; /* Add animation */
+}
+
+@keyframes moveBall {
+    0% { left: 22%;  } /* Start position */
+    100% { left: 22%; } /* End position */
+}
+
+@keyframes moveBall2 {
+    0% { left: 22%; } /* Start position */
+    100% { left: 39%; } /* Adjusted stopping position */
+}
+
+@keyframes moveBall3 {
+    0% { left: 22%; } /* Start position */
+    100% { left: 56%; } /* Adjusted stopping position */
+}
+
